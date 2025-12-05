@@ -18,7 +18,7 @@ const LettreMission = lazy(() => import('./pages/LettreMission').then(m => ({ de
 const ConsentementTraitement = lazy(() => import('./pages/ConsentementTraitement').then(m => ({ default: m.ConsentementTraitement })));
 
 const HomePage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
