@@ -25,13 +25,13 @@ if (!rootElement) {
 try {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-      <ErrorBoundary>
-        <BrowserRouter>
+      <BrowserRouter>
+        <ErrorBoundary>
           <LanguageProvider>
             <App />
           </LanguageProvider>
-        </BrowserRouter>
-      </ErrorBoundary>
+        </ErrorBoundary>
+      </BrowserRouter>
     </React.StrictMode>,
   )
 } catch (error) {
