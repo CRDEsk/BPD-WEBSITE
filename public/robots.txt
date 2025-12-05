@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /pdf/
+
+Sitemap: https://bureauprotectiondigitale.fr/sitemap.xml
+
