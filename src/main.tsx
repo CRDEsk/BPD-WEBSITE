@@ -6,7 +6,13 @@ import { BrowserRouter } from 'react-router-dom'
 import { LanguageProvider } from './contexts/LanguageContext'
 import { ErrorBoundary } from './components/ErrorBoundary'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const rootElement = document.getElementById('root')
+
+if (!rootElement) {
+  throw new Error('Root element not found')
+}
+
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <ErrorBoundary>
       <BrowserRouter>
